@@ -1,0 +1,376 @@
+/* 
+  Make it kind of a sci fi, dark mode, futuristic thing
+
+*/
+
+/* 
+  Colors:
+
+  Light Blue: 5fa7ef
+  Light Blue Shadow: 3a7ec2
+  Dark Backgroundy: 23363D
+  Light Green: 54d665
+  Dark BLue: 2c7dac
+  Dark Blue Shadow: 1a5a7f
+  Red: F15152
+  White: fbf5f3
+  
+  Fonts: 
+  'Baloo Chettan 2'
+  'Oxanium'
+
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-color: #23363d;
+  color: #fbf5f3;
+  font-family: "Baloo Chettan 2", cursive;
+}
+
+.App {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.top-left {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+}
+
+.top-right {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+}
+
+.wrapper {
+  height: 100%;
+  overflow: hidden;
+}
+
+.top-exp {
+  display: flex;
+  margin: 0 15%;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.home-wrapper {
+  display: grid;
+  grid-template-columns: 30% 35% 35%;
+  grid-template-rows: 30% 30% 40%;
+  margin-top: 25px;
+  height: 90%;
+}
+
+.home-side-column {
+  grid-row-start: 1;
+  grid-row-end: 4;
+  overflow: hidden;
+  height: 100%;
+}
+
+.home-side-column .img-container {
+  width: 100%;
+  height: 100%;
+}
+
+.home-side-column img {
+  object-fit: cover;
+  object-position: top right;
+  min-height: 80%;
+  max-width: 100%;
+}
+
+.svg-blue {
+  filter: invert(41%) sepia(99%) saturate(370%) hue-rotate(169deg)
+    brightness(92%) contrast(90%);
+  /* Light Blue: invert(69%) sepia(17%) saturate(5334%) hue-rotate(183deg)
+    brightness(96%) contrast(95%) */
+  /* Dark Blue: invert(41%) sepia(99%) saturate(370%) hue-rotate(169deg) brightness(92%) contrast(90%) */
+  /* Very Dark Blue: invert(27%) sepia(65%) saturate(555%) hue-rotate(158deg) brightness(98%) contrast(95%) */
+}
+
+.two-rows {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.h100 {
+  height: 100%;
+}
+
+.center-vertical-parent {
+  position: relative;
+}
+
+.center-vertical-child {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.skill {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  align-items: center;
+}
+
+.skill span {
+  display: block;
+  flex: 1;
+}
+
+.two-columns {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+#root {
+  height: 100%;
+  border: 10px solid #5fa7ef;
+  border-radius: 20px;
+  position: relative;
+}
+
+.physical-stats {
+  text-align: left;
+  background: #5fa7ef;
+}
+
+.home-description {
+  padding: 5px;
+  margin-top: 3px;
+}
+
+.about-text {
+  padding: 20px;
+}
+
+.btn {
+  color: #fbf5f3 !important;
+  padding: 10px;
+  background: #5fa7ef;
+  display: inline-block;
+  border-radius: 5px;
+  box-shadow: 0 6px #3a7ec2;
+  margin: 2px;
+  cursor: pointer;
+}
+
+.black-text {
+  color: #fbf5f3 !important;
+}
+
+.title-container {
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  border-radius: 20px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border: 10px solid #5fa7ef;
+  border-top: none;
+  background: #5fa7ef;
+  padding: 0 10px;
+}
+
+.title {
+  display: block;
+  margin: 0;
+  font-family: "Oxanium";
+}
+
+.exp-bar {
+  margin-left: 5px;
+  border-radius: 20px;
+}
+
+.exp-bar::-webkit-progress-bar {
+  background-color: #fbf5f3;
+  border-radius: 20px;
+}
+
+.exp-bar::-webkit-progress-value {
+  border-radius: 20px;
+  background-color: #54d665;
+}
+
+.exp-holder {
+  min-width: 50px;
+  width: 50%;
+  height: 1em;
+  display: inline-block;
+  margin-left: 5px;
+  padding-top: 4px;
+}
+
+.progress-bar-parent {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.progress-bar-background {
+  background-color: #fbf5f3;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.progress-bar-fill {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  animation: 1s ease-out 0s 1 fill-bar;
+}
+
+@keyframes fill-bar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.skill-progress-bar {
+  margin-left: 5px;
+  height: 0.6em;
+  border-radius: 20px;
+  flex: 1;
+}
+
+.skill-progress-bar::-webkit-progress-value {
+  transition: width 1s;
+}
+
+.skill-progress-bar::-webkit-progress-bar {
+  background-color: #fbf5f3;
+  border-radius: 20px;
+}
+
+.skill-progress-bar::-webkit-progress-value {
+  border-radius: 20px;
+  background-color: #1a5a7f;
+}
+
+.title-font {
+  font-family: "Oxanium";
+  opacity: 1;
+  animation: 1s ease-out 0s 1 fade-in;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.white-text {
+  color: #fbf5f3 !important;
+}
+
+.no-underline {
+  text-decoration: none !important;
+}
+
+.scrollable {
+  overflow: auto;
+  max-height: 100%;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #5fa7ef;
+  border-radius: 10px;
+}
+
+.project-thumbnail {
+  max-width: 100%;
+  max-height: 70vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+}
+
+.sub-link {
+  color: #fbf5f3;
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.no-top-space {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.image-icon {
+  object-fit: contain;
+  object-position: center;
+  height: 100%;
+  max-width: 100%;
+}
+
+.no-overflow {
+  overflow: hidden;
+}
+
+.mb-small {
+  margin-bottom: 5px;
+}
+
+.mt-none {
+  margin-top: 0;
+}
+
+.mb-none {
+  margin-bottom: 0;
+}
+
+.mt-small {
+  margin-top: 5px;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Opera and Firefox */
+  cursor: default;
+}
+
+.height-buffer {
+  height: 30px;
+}
