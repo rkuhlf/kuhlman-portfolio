@@ -3,11 +3,6 @@ import ReactDOM from "react-dom";
 
 import App from "./App";
 
-// other portfolios
-// https://codepen.io/rilstar/pen/EXEmVz
-// Check 000webhost.com
-// https://programmingresume.weebly.com/
-
 // try and get at least three projects for each category
 
 // include downloadable python projects
@@ -28,18 +23,6 @@ import App from "./App";
 // http://mathematical-gerrymandering.weebly.com/interactive-example.html
 // look on old computer
 
-// include data analysis projects
-// https://github.com/rkuhlf/GeographicData
-// soccer xg
-// https://github.com/rkuhlf/YouTubeHistory
-
-// include Unity projects
-// https://github.com/rkuhlf/hybreeder
-// https://github.com/rkuhlf/The-Runing
-// https://rkuhl.itch.io/omitl
-// https://rkuhl.itch.io/the-greatest-snowball
-// https://rkuhl.itch.io/the-power-of-melody
-
 // Miscellaneous
 // https://rkuhl.itch.io/my-brother-sam-is-dead
 // https://github.com/rkuhlf/NASAImages
@@ -59,10 +42,6 @@ import App from "./App";
 //        | achievements
 // skills |
 //        | projects
-// calculate the age so I don't have to update it
-// It has a featured project under the projects thing
-// clicking projects takes you to a projects page
-// make super cool animation where everything slides into place
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(

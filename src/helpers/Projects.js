@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-// this is a list of all of my projects so that I can just import the ones I want
+// this is a list of all of my projects so that I can just import the ones I want. The description in the box should be a short caption.
 
 // Other Portfolios
 export function CodePenPortfolio() {
@@ -228,6 +228,18 @@ export function MathematicalGerrymandering() {
 }
 
 // Data Analysis
+
+export function RocketSimulation() {
+  return (
+    <Project
+      url="/project/rocket-simulation"
+      img="https://res.cloudinary.com/dymfw7qfi/image/upload/v1663622669/OptimalThrustCurve.png"
+      title="Rocket Simulation"
+    >
+      A suite of rocket simulation tools, developed for the Goddard rocketry team at Brazoswood. Pictures is the output of the thrust curve optimization simulation.
+    </Project>
+  );
+}
 
 export function EarthQuakeData() {
   return (

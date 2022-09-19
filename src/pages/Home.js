@@ -30,7 +30,6 @@ class Home extends Component {
             <Link className="white-text no-underline" to="/experience">
               <span className="typewriter">Exp</span>
               <div className="exp-holder">
-                {/* <progress className="exp-bar" value={30} max="100" /> */}
                 <ProgressBar percentage="30" />
               </div>
             </Link>
@@ -57,13 +56,13 @@ class Home extends Component {
               <h3 className="title-font">Skills</h3>
               {/* Combine into web design */}
               {this.individualSkill("Web Dev", 80, "skill/web-design")}
-              {this.individualSkill("Nodejs", 50, "skill/node")}
+              {this.individualSkill("Nodejs", 60, "skill/node")}
               {this.individualSkill("React", 70, "skill/react")}
-              {this.individualSkill("Unity", 60, "skill/unity")}
-              {this.individualSkill("Python", 79, "skill/python")}
-              {this.individualSkill("Git", 68, "skill/git")}
-              {this.individualSkill("Art", 40, "skill/art")}
+              {this.individualSkill("Python", 89, "skill/python")}
+              {this.individualSkill("Unity", 40, "skill/unity")}
               {this.individualSkill("Math", 95, "skill/math")}
+              {this.individualSkill("Git", 75, "skill/git")}
+              {this.individualSkill("Art", 40, "skill/art")}
               {/* Consider adding
               Audacity
               ​MuseScore
@@ -108,9 +107,11 @@ class Home extends Component {
                 </div>
               </div>
               <div className="home-description typewriter scrollable">
-                A Texas programmer specializing in frontend development and
+                <i>A Texas programmer specializing in frontend development and
                 React. Skilled in math, but low art skills and limited
-                experience.
+                experience.</i>
+                
+                "I started programming in eighth grade using Khan Academy's Javascript tutorials, and I quickly fell in love with the idea of creating tools for other people to use. I liked putting my math skills to work, so I made quite a few data analyses, then followed them up with some explanatory websites. These days I am honing my algorithms and data structures at Rice, looking for summer internships."
                 <div className="height-buffer" />
                 <div className="height-buffer" />
                 <div className="height-buffer" />

@@ -29,7 +29,8 @@ import {
   Medusa,
   Well,
   Heart,
-  ProCons
+  ProCons,
+  RocketSimulation
 } from "../helpers/Projects";
 import { MathematicalGerrymandering } from "../helpers/Projects";
 import Title from "../helpers/Title";
@@ -57,12 +58,12 @@ class Skill extends Component {
           </Route>
           <Route path="/skill/react">
             <Title>React</Title>
+            <ProspectTheory />
             <ChemistryClicker />
             {/* <TreeDoList /> */}
             {/* <DiceSimulator /> */}
-            <ProCons />
-            <ProspectTheory />
             <LinkShortener />
+            <ProCons />
             <IdeaGenerator />
           </Route>
 
@@ -81,6 +82,7 @@ class Skill extends Component {
           </Route>
           <Route path="/skill/python">
             <Title>Python</Title>
+            <RocketSimulation />
             <PictureOfPictures />
             <WordGame />
           </Route>
@@ -97,6 +99,7 @@ class Skill extends Component {
 
           <Route path="/skill/math">
             <Title>Math</Title>
+            <RocketSimulation />
             {/* <YouTubeHistory /> */}
             <Heart />
             <SoccerXG />

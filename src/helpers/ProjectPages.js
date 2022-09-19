@@ -82,7 +82,8 @@ export function PictureOfPictures() {
       title="Picture of Pictures"
     >
       This is a Python script that takes a large amount of input pictures and
-      attempts to replicate a target picture with them.
+      attempts to replicate a target picture with them. I scaled down the base images using skimage, then I 
+      looped through the large image, selecting the least different base image and stitching it into the larger final image.
     </Project>
   );
 }
@@ -95,7 +96,7 @@ export function WordGame() {
       title="Word Game"
     >
       This is a simple game written in Python with the library PyGame where you
-      try to find three letter words in a grid.
+      try to find three letter words in a grid. It uses a .txt of three letter words, comparing each user input to all of the words to see if they guessed successfully. Although the game itself could use some additional features, the user interface is well-polished and the program runs without bugs.
     </Project>
   );
 }
@@ -133,14 +134,16 @@ export function LinkShortener() {
 export function ProspectTheory() {
   return (
     <Project
-      url="http://prospect-theory.herokuapp.com/"
+      url="http://prospecttheory.vercel.app/"
       img="https://res.cloudinary.com/dymfw7qfi/image/upload/v1584360308/screenshot-prospect-theory.herokuapp.com-2020.03.png"
       title="Prospect Theory"
     >
       I programmed and published a comprehensive explanation of the economic
       principle of Prospect Theory using React and Heroku. This is one of the
-      most ambitious projects that I have ever finished, and I like to thing
+      most ambitious projects that I have ever finished, and I like to think
       that it has the most advanced prospect theory calculator on the internet.
+
+      Prospect theory stems from a relatively simple criticism of traditional economics: people are not rational (at least not in the way economists often assume). People are not very good at thinking about high or low probabilities. People do not value their money proportionally to the amount they have. People <i>really</i> do not like to lose money. Prospect theory is not particularly well-explained online, with an extremely technical Wikipedia page and several research publications serving as the main sources if you care more than the very basics. Hopefully, my website can offer an alternative source that bridges the gap between pointlessly difficult to read and actual interesting information.
     </Project>
   );
 }
@@ -167,8 +170,7 @@ export function ChemistryClicker() {
       img="https://res.cloudinary.com/dymfw7qfi/image/upload/v1584360660/screenshot-nspty.csb.app-2020.03.png"
       title="Chemistry Clicker"
     >
-      I built my first game in react using flaticon for the art. It's a clicker
-      game about building as much plastic as you can.
+      One of my first projects in React was a little clicker game about building as much plastic as you can. I used Flaticon for the art and tried to make a little more interesting than the traditional cookie clicker style idle games. Each resource beyond sunlight requires some previous resource, forcing the player to balance their production well. Although it's a simple concept, the snappy UI and slight strategy make it pretty fun (in my opinion).
     </Project>
   );
 }
@@ -230,6 +232,31 @@ export function MathematicalGerrymandering() {
 
 // Data Analysis
 
+export function RocketSimulation() {
+  return (
+    <Project
+      url="https://github.com/rkuhlf/rocket-simulation"
+      img="https://res.cloudinary.com/dymfw7qfi/image/upload/v1663622669/OptimalThrustCurve.png"
+      title="Rocket Simulation"
+    >
+      As dynamics lead of the Goddard rocketry team (~20 people), I was in charge of predicting the flight and stability of our rocket, along with two others. Although there are third party solutions, developing an in-house solution, using Python has some advantages.
+
+      I was able to implement parameter sensitivity testing, so I could report to the lead engineer exactly how much difference it would make to increase the diameter of our rocket by a quarter of an inch as opposed to changing the weight by ten pounds. I created Monte Carlo testing, presenting a distribution of possible outcomes at our preliminary and critical design reviews.
+      
+      I also created a custom simulation of the engine, which is a piece of software that is difficult to get right and is not really offered for free by any third parties. Once again, I implemented parameter sensitivity testing and Monte Carlo simulation to give us a range of results, and those findings instructed the propulsion team in how to best design the motor.
+
+      We flew successfully in June of 2022 at the missile range in White Sands, verifying the accuracy of the simulation to within 5%. The team remains the world record holder for apogee of a high school rocket, flying to 45,000' and nearly twice the speed of sound. You can read more about us{" "}<a
+        className="white-text"
+        href="https://sites.google.com/student.brazosportisd.net/goddard2022."
+        target="_blank"
+      >
+        on our website
+      </a> 
+      {" "}(I wrote most of this too, but we used Google Sites for easy collaboration).
+    </Project>
+  );
+}
+
 export function EarthQuakeData() {
   return (
     <Project
@@ -237,7 +264,7 @@ export function EarthQuakeData() {
       img="https://res.cloudinary.com/dymfw7qfi/image/upload/v1584372006/screenshot-localhost_8000-2020.03.png"
       title="Earthquake Data"
     >
-      An display of where earthquakes are in the world.
+      A display of where earthquakes are in the world.
     </Project>
   );
 }
@@ -275,8 +302,10 @@ export function Hybreeder() {
       img="https://img.itch.zone/aW1nLzE2NTIwMjUucG5n/315x250%23c/q3%2FYRP.png"
       title="Hybreeder"
     >
-      A game built in Unity for the Github Game Off. It won third place for
-      theme interpretation.
+      I built Hybreeder in thirty days using Unity for the Github Game Off. It won third place in 
+      theme interpretation, and is probably the most fun game that I have made. It's a pretty intuitive sandbox breeding game (think Cow Evolution), where you can breed different animals to make random combinations of offspring.
+
+      Frankly, the main reason that I am proud of Hybreeder is that it is the first time I planned a project well. Given thirty days to make a game, I would usually underplan, overscope, and burn out within a week. However, this time I was able to focus on the necessary features at the beginning and save the polishing until the end, giving me a decently fun final product.
     </Project>
   );
 }
@@ -405,10 +434,7 @@ export function StackEditContribution() {
       img="https://res.cloudinary.com/dymfw7qfi/image/upload/v1585838071/screenshot-stackedit.io-2020.04.png"
       title="Stackedit"
     >
-      This is the first contribution I ever made to a repository that wasn't
-      mine. I had been using Stackedit on my phone, but the scrolling wasn't
-      working correctly. I knew it was open source, so I made a pull request,
-      and when it was finally merged, I could finally scroll easily.
+      This is the first contribution I ever made to an open source piece of software. I had been using Stackedit on my phone, but smooth scrolling was strangely disabled on mobile. I took a look at the repository and did some Googling, and it turned out to be a relatively easy fix. Once implemented, I made a pull request and could finally scroll easily.
     </Project>
   );
 }
