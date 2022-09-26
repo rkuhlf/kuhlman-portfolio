@@ -420,6 +420,7 @@ export function Heart() {
       img="https://res.cloudinary.com/dymfw7qfi/image/upload/v1586087200/MathematicalHeart.gif"
       title="Mathematical Heart"
     >
+      
       A heart that I drew using a mathematical equation.
     </Project>
   );

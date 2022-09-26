@@ -317,7 +317,9 @@ export function Runing() {
       img="https://img.itch.zone/aW1hZ2UvMzUxNTc1LzE3NTEzNjYucG5n/250x600/lh6jFT.png"
       title="The Runing"
     >
-      A Unity puzzle game.
+      In an effort to round out the genre of games I have experience working, I created The Runing. I enjoyed the process of thinking of outside-the-box solutions, then coming up with puzzles that required them. It features a variety of interactions that the player can trigger using four elemental spells.
+
+      Written in Unity and coded in C#, it is a tricky little puzzle game that is pretty fun.
     </Project>
   );
 }
@@ -353,7 +355,7 @@ export function PowerOfMelody() {
       img="https://res.cloudinary.com/dymfw7qfi/image/upload/v1584373167/screenshot-rkuhl.itch.io-2020.03_2.png"
       title="The Power of Melody"
     >
-      A game jam entry.
+      Power of Melody was developed for a week long game jam and was my attempt to put a fun spin on parkour games. Built in Unity using C#, it is one of my better games, featuring several levels, a neat soundtrack, and a fun atmosphere.
     </Project>
   );
 }
@@ -396,7 +398,7 @@ export function NASAImages() {
       img="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/potw2009a.jpg"
       title="NASA Images"
     >
-      A chrome extension that changes your background to NASAs image of the day.
+      I wrote several chrome extensions for personal use around 2020, both to practice my JavaScript and to experiment with a new development environment. This one changes your background to NASA's image of the day.
     </Project>
   );
 }
@@ -408,7 +410,7 @@ export function CopyAndPaste() {
       img="https://www.sodapdf.com/blog/wp-content/uploads/2017/08/Cut-copy-and-paste-images.jpg"
       title="Copy Paste Memory"
     >
-      A chrome extension that stores your most recent copies for later use.
+      I wrote several chrome extensions for personal use around 2020, both to practice my JavaScript and to experiment with a new development environment. This is a chrome extension that stores the items you copied most recently for later use (now made defunct by windows-V, which is awesome). 
     </Project>
   );
 }
@@ -422,7 +424,9 @@ export function GithubProfile() {
     >
       You can view my github profile here. I have been active off and on for the
       past couple of years, and I have some minor experience using other git
-      clients like Bitbucket.
+      clients like Bitbucket. I find it to be the easiest way to do version control, but I sometimes I use it just so that I can work on the same project on multiple computers.
+
+      Over the years, my documentation skills have improved, and so has my project organization. My Github is filled with half-finished projects, but Hybreeder, Prospect Theory, and this website are all pretty easy to look through.
     </Project>
   );
 }
@@ -446,21 +450,20 @@ export function Heart() {
       img="https://res.cloudinary.com/dymfw7qfi/image/upload/v1586087200/MathematicalHeart.gif"
       title="Mathematical Heart"
     >
-      This is a heart that I drew with a library called{" "}
-      <a
+      I love math, and I have been a massive fan of 3blue1brown for quite some time. In his YouTube videos, he uses a Python library that he developed, <a
         className="white-text"
         href="https://github.com/3b1b/manim"
         target="_blank"
       >
         manim
-      </a>
-      . I extended the library to include polar graphs, and then I developed a
-      function that would give me a heart shape.
+      </a>, to generate animations that explain mathematical concepts. I took it upon myself to learn the library, combing through the code base to make up for the lack of documentation, and I made a couple small videos demonstrating concepts.
+      <br />
+      Pictured is a heart that is drawn using a mathematical equation. I extended the library to include polar graphs, and then I developed a function that would output a heart shape.
     </Project>
   );
 }
 
-// this is the code for displaying a project in a list
+// this is the code for displaying a project in a list (wait maybe it is for a project page)
 
 function Project(props) {
   return (
