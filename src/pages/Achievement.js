@@ -71,34 +71,19 @@ class Achievement extends Component {
             img="https://res.cloudinary.com/dymfw7qfi/image/upload/v1662320793/15a18424c79eae_ognqfjklhmeip.png"
           >
             I completed{" "}
-            <a
-              className="white-text"
-              target="_blank"
-              href="https://ldjam.com/users/rkuhl/games"
-            >
+            <a className="white-text" target="_blank" href="https://ldjam.com/users/rkuhl/games">
               three Ludum Dare games
-            </a>
-            :{" "}
+            </a>:{" "}
             <Link className="white-text" to="project/omitl">
               Omitl
-            </Link>
-            ,{" "}
-            <a
-              target="_blank"
-              className="white-text"
-              href="https://ldjam.com/events/ludum-dare/42/deluge"
-            >
+            </Link>,{" "}
+            <a target="_blank" className="white-text" href="https://ldjam.com/events/ludum-dare/42/deluge">
               Deluge
-            </a>
-            , and{" "}
-            <a
-              target="_blank"
-              className="white-text"
-              href="https://ldjam.com/events/ludum-dare/40/money-bags"
-            >
+            </a>, and{" "}
+            <a target="_blank" className="white-text" href="https://ldjam.com/events/ludum-dare/40/money-bags">
               Money Bags
-            </a>
-            . I love Ludum Dare because it always gives me good ideas and I love
+            </a>.
+            I love Ludum Dare because it always gives me good ideas and I love
             to create content, but I've never been able to use my time well
             enough to have something I'm really happy with.
           </Project>
