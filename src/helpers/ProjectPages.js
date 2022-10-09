@@ -1,6 +1,8 @@
 import React from "react";
 import Title from "./Title";
 
+// TODO: try and find some of those pixel art animations that I spent so long working on when I was making that boss-battler rogue-like
+
 // this is a list of all of my projects so that I can just import the ones I want
 
 // Other Portfolios
@@ -25,8 +27,7 @@ export function WeeblyPortfolio() {
       img="https://res.cloudinary.com/dymfw7qfi/image/upload/v1584321896/screenshot-programmingresume.weebly.com-2020.03.png"
       title="Weebly Portfolio"
     >
-      This is a programming project portfolio that I built using Weebly and some
-      custom css.
+      This is a programming project portfolio that I built using Weebly and some custom css. I like to keep the older versions of portfolios with me so that I can see how I develop as a program and ensure that I never lose a project.
     </Project>
   );
 }
@@ -38,8 +39,7 @@ export function Artfolio() {
       img="https://res.cloudinary.com/dymfw7qfi/image/upload/v1585350938/screenshot-codesandbox.io-2020.03.png"
       title="Artfolio"
     >
-      This is my art portfolio. I built it using React and codesandbox, and it
-      shows the illustrations, pixel art, and 3D models that I am most proud of.
+      This is my art portfolio. I built it using React and codesandbox, and it shows the illustrations, pixel art, and 3D models that I am most proud of. It isn't always necessary for my projects to have art, but I like to think that I can get it done (or at least make a workable prototype) when necessary.
     </Project>
   );
 }
@@ -53,7 +53,7 @@ export function Medusa() {
       img="https://res.cloudinary.com/dymfw7qfi/image/upload/v1586005385/MedusaDrawing.png"
       title="Medusa"
     >
-      This is a chibi Medusa that I drew for fun with some colored pencils.
+      This is a chibi Medusa that I drew for fun with some colored pencils. It was concept art for a boss-based rogue-like that I spent about a month working on that eventually came to nothing.
     </Project>
   );
 }
@@ -65,9 +65,7 @@ export function Well() {
       img="https://res.cloudinary.com/dymfw7qfi/image/upload/v1586005562/Well.png"
       title="Well"
     >
-      This is a 3D well that I modeled in Blender. I followed
-      https://www.youtube.com/watch?v=OlnkGCdtGEw, but I added some of my own
-      models.
+      The displayed picture is a 3D well that I modeled in Blender, taken from my art portfolio website. I followed tutorials for some parts, but I always try to add a spin to make the project really feel like it is mine. 
     </Project>
   );
 }
@@ -126,7 +124,7 @@ export function LinkShortener() {
       title="Lnk Shrtner"
     >
       I built a simple link shortener website using a cool free link shortening
-      API and bootstrap.
+      API and Bootstrap for the styling.
     </Project>
   );
 }
@@ -201,11 +199,12 @@ export function ChatApp() {
       title="Chattax"
     >
       I built a chat app using node and socket.io to figure out the basics of
-      backend programming.
+      backend programming. It is deployed with Heroku, but I am most proud of the display. It looks pretty nice.
     </Project>
   );
 }
 
+// Unfinished
 export function TreeDoList() {
   return (
     <Project url="/project/treedo-list" img="#" title="Tree Do List">
@@ -223,9 +222,7 @@ export function MathematicalGerrymandering() {
       img="https://res.cloudinary.com/dymfw7qfi/image/upload/v1584371728/screenshot-mathematical-gerrymandering.weebly.com-2020.03.png"
       title="Mathematical Gerrymandering"
     >
-      A p5js canvas embedded within a weebly website. It shows how
-      gerrymandering works and offers a button to optimize gerrymandering for a
-      generate situation.
+      For my first ever numerical analysis project, I attempted to quantify gerrymandering. I considered the shape of the county, but I placed more emphasis on the actual misrepresentation that gerrymandering can promote. Working in Weebly, I wrote a description of the kinds of gerrymandering that are common in the American political system, and I gave a few fun facts about the history. The centerpiece is a p5js canvas embedded within a website. It shows how gerrymandering works and offers a button to optimize gerrymandering for any situation, using brute-force to come up with the most gerrymandered arrangement possible.
     </Project>
   );
 }
@@ -257,6 +254,7 @@ export function RocketSimulation() {
   );
 }
 
+// TODO: Elaborate
 export function EarthQuakeData() {
   return (
     <Project
@@ -276,11 +274,12 @@ export function SoccerXG() {
       img="https://res.cloudinary.com/dymfw7qfi/image/upload/v1584372108/Annotation_2020-03-16_102126.png"
       title="Soccer Expected Goals"
     >
-      A neural network based prediction of who will win soccer games.
+      A neural network based prediction of who will win soccer games. Using data from{" "}<a href="https://www.kaggle.com/hugomathien/soccer">Kaggle</a>{" "}, I combined my interests in Python and soccer to try to figure out what makes teams more likely to win. I used Tensorflow and a pretty small neural network (it turns out to be pretty hard to predict sports), but I was happy with the project.
     </Project>
   );
 }
 
+// TODO: update this one to actually work and then get an image of it
 export function YouTubeHistory() {
   return (
     <Project
@@ -294,7 +293,6 @@ export function YouTubeHistory() {
 }
 
 // Unity
-
 export function Hybreeder() {
   return (
     <Project
@@ -331,7 +329,9 @@ export function Omitl() {
       img="https://res.cloudinary.com/dymfw7qfi/image/upload/v1584373017/screenshot-rkuhl.itch.io-2020.03.png"
       title="Omitl"
     >
-      A Unity Ludum Dare Entry.
+      Omitl, meaning bone in Nahuatl, is my most recent Ludum Dare Entry. Once again, it is written in Unity using C#, made over the course of two days. I made the art in Krita and the music in Bosca Ceoil.
+
+      This time, I think I actually managed to end up with a game that is a little bit fun and requires a little bit of skill. You run around, slashing away at more and more skeletons, until eventually you die. It's pretty cool.
     </Project>
   );
 }
@@ -343,7 +343,9 @@ export function TheGreatestSnowball() {
       img="https://res.cloudinary.com/dymfw7qfi/image/upload/v1584373100/screenshot-rkuhl.itch.io-2020.03_1.png"
       title="The Greatest Snowball"
     >
-      A game jam entry.
+      During my game jam phase, I did a few non-Ludum Dare jams. The Greatest Snowball is my submission to the TV Game Jam, and is one of my best games. It is themed from The Office, based loosely on the episode that shares the name.
+
+      In effect, you run around hitting people with snowballs, picking from upgrades as you go. Hopefully, it has something of an arcade-y feel. Once again, it was written in C#, drawn in Krita, and put together using Unity.
     </Project>
   );
 }
@@ -386,7 +388,7 @@ export function MyBrotherSamIsDead() {
       title="My Brother Sam is Dead"
     >
       A Twine project converting the book <i>My Brother Sam is Dead</i> into a
-      choose your own adventure story.
+      choose your own adventure story filled with alternate realities. Twine handles most of the heavy lifting, but I programmed music into the background, added some custom effects to decision-making, and created some complicated alternate pathways. It was quite fun, and I recommend Twine to anyone interested in choose your own adventure stories.
     </Project>
   );
 }
