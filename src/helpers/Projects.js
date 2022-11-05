@@ -63,8 +63,7 @@ export function Modeling() {
       img="https://res.cloudinary.com/dymfw7qfi/image/upload/v1667685448/Food.png"
       title="3D Modeling"
     >
-      {/* TODO: make a link to itch page here */}
-      The summer of Covid, I took up 3D modeling as a hobby. I published several asset packs to my itch.io page, featuring animated marine and ice age animals, a snail, and a ton of food. Since then, I have collected over 8,000 views and 2,500 downloads, giving a little back to the game-making community that has given so much to me.
+      The summer of Covid, I took up 3D modeling as a hobby. I published several asset packs to <a target="_blank" className="white-text" href="https://rkuhlf-assets.itch.io/">my itch.io page</a>, featuring animated marine and ice age animals, a snail, and a ton of food. Since then, I have collected over 8,000 views and 2,500 downloads, giving a little back to the game-making community that has given so much to me.
     </Project>
   );
 }
