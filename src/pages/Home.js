@@ -110,6 +110,9 @@ class Home extends Component {
                 <i>A Texas programmer specializing in frontend development and
                 React. Skilled in math, but low art skills and limited
                 experience.</i>
+
+                <br />
+                <br />
                 
                 "I started programming in eighth grade using Khan Academy's Javascript tutorials, and I quickly fell in love with the idea of creating tools for other people to use. I liked putting my math skills to work, so I made quite a few data analyses, then followed them up with some explanatory websites. These days I am honing my algorithms and data structures at Rice, looking for summer internships."
                 <div className="height-buffer" />

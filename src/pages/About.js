@@ -5,7 +5,7 @@ import Title from "../helpers/Title";
 class About extends Component {
   render() {
     return (
-      <div>
+      <div className="scrollable">
         <Title>About</Title>
         <div className="about-text">
           Hi, I'm Riley Kuhlman. I've been programming off and on since I was 14 years old. I started learning on Khan Academy and YouTube (I really enjoyed following along with Daniel Shiffman's tutorials), then took a few classes in high school. I continued learning by joining a few clubs, finishing fourth at State in 2021 with the CS UIL team and writing a Python simulation for my rocketry team.

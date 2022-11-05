@@ -7,7 +7,7 @@ class Experience extends Component {
     const years_programming = new Date().getFullYear() - 2017;
 
     return (
-      <div>
+      <div className="scrollable">
         <Title>Experience</Title>
         <div className="about-text">
           I have {years_programming} years of experience programming, split pretty evenly between front-end development and numerical / algorithm-based projects. I have some experience with data science - I developed an analysis of NBA salaries and a soccer goals predictor - and I am familiar with basic machine learning concepts.
