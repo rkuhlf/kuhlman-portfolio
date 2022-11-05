@@ -10,13 +10,11 @@ import {
   ChemistryClicker,
   ProspectTheory,
   LinkShortener,
-  TreeDoList,
   TheGreatestSnowball,
   Omitl,
   PowerOfMelody,
   SoccerXG,
   EarthQuakeData,
-  YouTubeHistory,
   Hybreeder,
   Runing,
   MyBrotherSamIsDead,
@@ -24,10 +22,10 @@ import {
   CopyAndPaste,
   Artfolio,
   IdeaGenerator,
-  Medusa,
   Heart,
   ProCons,
-  RocketSimulation
+  RocketSimulation,
+  Modeling
 } from "../helpers/Projects";
 
 // shows all of the projects in a scrollable list
@@ -108,7 +106,7 @@ class Projects extends Component {
           {MyBrotherSamIsDead()}
           {NASAImages()}
           {CopyAndPaste()}
-
+          {Modeling()}
 
           <h2 className="title-font white-text no-underline">
             Other Portfolios

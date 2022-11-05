@@ -45,6 +45,40 @@ export function Artfolio() {
 }
 
 // Art
+export function Modeling() {
+  return (
+    <Project
+      url="https://rkuhlf-assets.itch.io/"
+      img="https://res.cloudinary.com/dymfw7qfi/image/upload/v1667685448/Food.png"
+      title="3D Modeling"
+    >
+      {/* https://rkuhlf-assets.itch.io/ */}
+      The summer of Covid, I took up 3D modeling as a hobby. With Blender as my weapon of choice, I published several asset packs to my itch.io page, featuring animated marine and ice age animals, a snail, and a ton of food. Since then, I have collected over 8,000 views and 2,500 downloads, giving a little back to the game-making community that has given so much to me.
+      <br />
+
+      {/* https://rkuhlf-assets.itch.io/aquatic-animal-models */}
+      {/* https://res.cloudinary.com/dymfw7qfi/image/upload/v1667686284/Shark.png */}
+      My first real project was a collection of low-poly marine animals, each animated to be idle and moving. It got way more traction than I expected, which inspired me to keep going.
+
+      {/* https://res.cloudinary.com/dymfw7qfi/image/upload/v1667686201/Mammoth.png https://rkuhlf-assets.itch.io/ice-age */}
+      {/* Add a link to the Ice age movie */}
+      I followed it up with a set of animals from the Ice Age. I liked thinking about Sid the sloth and Manny the mammoth of the wonderful Ice Age movies, but I tried to make it a little more proportionally realistic.
+
+      {/* https://res.cloudinary.com/dymfw7qfi/image/upload/v1667686454/Adam.png */}
+      {/* https://rkuhlf-assets.itch.io/classical-paintings */}
+      Eventually, I branched out in pixel art. I made a set of replica portraits, trying to capture the sense provided by each famous painting.
+
+      {/* https://rkuhlf-assets.itch.io/low-poly-shields */}
+      {/* https://res.cloudinary.com/dymfw7qfi/image/upload/v1667686421/Shields.png */}
+      In an attempt to making something that would be a little more niche, I came up with a set of shields. Each one had its own design, and I had a ton of fun picking and choosing the aesthetics.
+
+      {/* https://www.artstation.com/artwork/ZG0Vww */}
+      {/* https://res.cloudinary.com/dymfw7qfi/image/upload/v1667686741/riley-kuhlman-final.png */}
+      My ultimate project was a massive fire-breathing dragon. I was determined to finally successfully venture out of the realm of low-poly assets and into art that just looks cool. Dragons are just about the coolest thing I know, so I went with that.
+
+    </Project>
+  );
+}
 
 export function Medusa() {
   return (

@@ -27,6 +27,7 @@ import {
   GithubProfile,
   StackEditContribution,
   Medusa,
+  Modeling,
   Well,
   Heart,
   ProCons,
@@ -69,6 +70,7 @@ class Project extends Component {
         <Route path="/project/github" component={GithubProfile} />
         <Route path="/project/stackedit-contribution" component={StackEditContribution} />
         <Route path="/project/medusa" component={Medusa} />
+        <Route path="/project/modeling" component={Modeling} />
         <Route path="/project/well" component={Well} />
         <Route path="/project/heart" component={Heart} />
         <Route path="/project/procons" component={ProCons} />

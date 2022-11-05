@@ -27,6 +27,7 @@ import {
   GithubProfile,
   StackEditContribution,
   Medusa,
+  Modeling,
   Well,
   Heart,
   ProCons,
@@ -89,11 +90,11 @@ class Skill extends Component {
 
           <Route path="/skill/art">
             <Title>Art</Title>
+            <Modeling />
             <Artfolio />
             <Medusa />
             <Well />
-            {/* Have a couple of drawings */}
-            {/* Have a couple of videos */}
+            {/* Have a couple of videos that I edited*/}
             {/* Have some music */}
           </Route>
 
