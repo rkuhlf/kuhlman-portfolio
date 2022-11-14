@@ -45,18 +45,19 @@ class Skill extends Component {
         <div class="about-text no-top-space">
           <Route path="/skill/web-design">
             <Title>Web Design</Title>
+            <ProspectTheory />
+            <ChatApp />
+            <MyBrotherSamIsDead />
+            <StackEditContribution />
+            <Artfolio />
+            <DiceSimulator />
             <NASAImages />
             <CopyAndPaste />
             <MathematicalGerrymandering />
-            <MyBrotherSamIsDead />
             <CodePenPortfolio />
             <WeeblyPortfolio />
           </Route>
-          <Route path="/skill/node">
-            <Title>Node</Title>
-            <ChatApp />
-            {/* <TreeDoList /> */}
-          </Route>
+
           <Route path="/skill/react">
             <Title>React</Title>
             <ProspectTheory />
@@ -98,14 +99,26 @@ class Skill extends Component {
             {/* Have some music */}
           </Route>
 
-          <Route path="/skill/math">
-            <Title>Math</Title>
-            <RocketSimulation />
-            {/* <YouTubeHistory /> */}
-            <Heart />
+          <Route path="/skill/math-and-data">
+            {/* Include AI, basketball salaries predictions, comp baseball predictions, circle center finder, and physics stuff. Add height predictor and any hard algorithms that I write. */}
+            <Title>Math ;amp Data Science</Title>
+
+            <br />
+            <br />
+            <div>
+              I have quite a few traditional data science projects, but I really love math, and some of my best stuff comes from taking programming and having fun with math problems. Although big data usually ends up with the most real-world applications, sometimes useful things are discovered in theoretical exploration. That being said, here are a few of my models. 
+            </div>
+            
+
             <SoccerXG />
-            <ProspectTheory />
             <EarthQuakeData />
+
+            <DiceSimulator />
+
+            <RocketSimulation />
+            <ProspectTheory />
+            <Heart />
+            
           </Route>
         </div>
       </div>
