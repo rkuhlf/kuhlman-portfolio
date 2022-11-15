@@ -30,6 +30,7 @@ import {
 
 // shows all of the projects in a scrollable list
 
+// TODO: cut down this list a little bit and make sure all of my skills have enough projects
 class Projects extends Component {
   render() {
     return (
@@ -37,8 +38,7 @@ class Projects extends Component {
         <Title>Projects</Title>
 
         <div className="about-text">
-          This is a collection of the different projects that I have worked on
-          organized by what skill they show best.
+          This is a list highlighting my best projects, loosely organized by what skill the most relevant skill.
 
           <h2 className="title-font white-text no-underline">Python Scripts</h2>
           <div>
@@ -96,10 +96,11 @@ class Projects extends Component {
           {SoccerXG()}
           {Heart()}
           {EarthQuakeData()}
+          {DiceSimulator()}
           {/* {YouTubeHistory()} */}
 
 
-          <h2 className="title-font white-text no-underline">Miscellaneous</h2>
+          <h2 className="title-font white-text no-underline">Miscellaneous Software</h2>
           <div>
             I've done some other projects that I'm proud of, but they don't really fit into any other category.
           </div>
@@ -117,6 +118,17 @@ class Projects extends Component {
           {Artfolio()}
           {CodePenPortfolio()}
           {WeeblyPortfolio()}
+
+
+          <h2 className="title-font white-text no-underline">Engineering</h2>
+          <div>
+            In my experience programming, I have branched out to a few other aspects of engineering. I've stayed mostly within electrical engineering and mechanical engineering, and I hope that having a wide variety of skills will improve my problem solving ability. It's also a ton of fun to make stuff with my hands.
+          </div>
+
+          {/* {CAD} */}
+          {/* {Machining()} */}
+          {/* {RocketEngine()} */}
+          {/* OxidizerStand() */}
 
         </div>
       </div>

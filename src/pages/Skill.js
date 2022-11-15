@@ -120,6 +120,24 @@ class Skill extends Component {
             <Heart />
             
           </Route>
+
+          <Route path="/skill/engineering">
+            {/* Include AI, basketball salaries predictions, comp baseball predictions, circle center finder, and physics stuff. Add height predictor and any hard algorithms that I write. */}
+            <Title>Engineering</Title>
+
+            <br />
+            <br />
+            <div>
+              In my experience programming, I have branched out to a few other aspects of engineering. I've stayed mostly within electrical engineering and mechanical engineering, and I hope that having a wide variety of skills will improve my problem solving ability. It's also a ton of fun to make stuff with my hands.
+            </div>
+            
+            {/* {RocketEngine()} */}
+            {/* OxidizerStand() */}
+            {/* {CAD} */}
+            {/* {Machining()} */}
+            
+          </Route>            
+          
         </div>
       </div>
     );

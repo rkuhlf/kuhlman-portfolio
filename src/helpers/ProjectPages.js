@@ -277,9 +277,18 @@ export function RocketSimulation() {
     >
       As dynamics lead of the Goddard rocketry team (~20 people), I was in charge of predicting the flight and stability of our rocket, along with two others. Although there are third party solutions, developing an in-house solution, using Python has some advantages.
 
+      <br />
+      <br />
+
       I was able to implement parameter sensitivity testing, so I could report to the lead engineer exactly how much difference it would make to increase the diameter of our rocket by a quarter of an inch as opposed to changing the weight by ten pounds. I created Monte Carlo testing, presenting a distribution of possible outcomes at our preliminary and critical design reviews.
+
+      <br />
+      <br />
       
       I also created a custom simulation of the engine, which is a piece of software that is difficult to get right and is not really offered for free by any third parties. Once again, I implemented parameter sensitivity testing and Monte Carlo simulation to give us a range of results, and those findings instructed the propulsion team in how to best design the motor.
+
+      <br />
+      <br />
 
       We flew successfully in June of 2022 at the missile range in White Sands, verifying the accuracy of the simulation to within 5%. The team remains the world record holder for apogee of a high school rocket, flying to 45,000' and nearly twice the speed of sound. You can read more about us{" "}<a
         className="white-text"
