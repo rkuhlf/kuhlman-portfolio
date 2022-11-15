@@ -46,21 +46,19 @@ class Projects extends Component {
             converting my thoughts into code, and I've made several of my
             favorite projects in it.
           </div>
-          {RocketSimulation()}
-          {PictureOfPictures()}
-          {WordGame()}
-
+          < RocketSimulation />
+          < PictureOfPictures />
+          {/* CEA */}
 
           <h2 className="title-font white-text no-underline">React Sites</h2>
           <div>
             My current favorite way to build apps is with reactjs. I love the
             simplicity and scalability of it.
           </div>
-          {ProspectTheory()}
-          {ChemistryClicker()}
-          {LinkShortener()}
-          {ProCons()}
-          {IdeaGenerator()}
+          < ProspectTheory />
+          < ChemistryClicker />
+          < ProCons />
+          < IdeaGenerator />
 
 
           <h2 className="title-font white-text no-underline">
@@ -70,8 +68,8 @@ class Projects extends Component {
             I've built a couple of applications that make use of databases for a
             couple of projects in the past.
           </div>
-          {ChatApp()}
-          {/* {TreeDoList()} */}
+          < ChatApp />
+          {/* < TreeDoList /> */}
 
 
           <h2 className="title-font white-text no-underline">Unity Games</h2>
@@ -82,32 +80,29 @@ class Projects extends Component {
             participate in short game jams, because otherwise I don't scope my
             project well.
           </div>
-          {Hybreeder()}
-          {TheGreatestSnowball()}
-          {Omitl()}
-          {PowerOfMelody()}
-          {Runing()}
+          < Hybreeder />
+          < TheGreatestSnowball />
+          < Omitl />
+          < PowerOfMelody />
+          < Runing />
 
 
           <h2 className="title-font white-text no-underline">Data Analysis</h2>
           <div>
             I love math, and I've dabbled in analyzing data a couple of times.
           </div>
-          {SoccerXG()}
-          {Heart()}
-          {EarthQuakeData()}
-          {DiceSimulator()}
-          {/* {YouTubeHistory()} */}
+          < SoccerXG />
+          < EarthQuakeData />
+          < DiceSimulator />
 
 
           <h2 className="title-font white-text no-underline">Miscellaneous Software</h2>
           <div>
             I've done some other projects that I'm proud of, but they don't really fit into any other category.
           </div>
-          {MyBrotherSamIsDead()}
-          {NASAImages()}
-          {CopyAndPaste()}
-          {Modeling()}
+          < MyBrotherSamIsDead />
+          < CopyAndPaste />
+          < Modeling />
 
           <h2 className="title-font white-text no-underline">
             Other Portfolios
@@ -115,9 +110,9 @@ class Projects extends Component {
           <div>
             I've made several portfolios as I progressed as a programmer, and I decided to keep them here for posterity's sake. Although the spirit and effort was constant, sometimes the content was lacking.
           </div>
-          {Artfolio()}
-          {CodePenPortfolio()}
-          {WeeblyPortfolio()}
+          < Artfolio />
+          < CodePenPortfolio />
+          < WeeblyPortfolio />
 
 
           <h2 className="title-font white-text no-underline">Engineering</h2>
@@ -125,10 +120,8 @@ class Projects extends Component {
             In my experience programming, I have branched out to a few other aspects of engineering. I've stayed mostly within electrical engineering and mechanical engineering, and I hope that having a wide variety of skills will improve my problem solving ability. It's also a ton of fun to make stuff with my hands.
           </div>
 
-          {/* {CAD} */}
-          {/* {Machining()} */}
-          {/* {RocketEngine()} */}
-          {/* OxidizerStand() */}
+          {/* <RocketEngine /> */}
+          {/* <OxidizerStand /> */}
 
         </div>
       </div>

@@ -36,7 +36,7 @@ import {
 import { MathematicalGerrymandering } from "../helpers/Projects";
 import Title from "../helpers/Title";
 
-// shows all of the projects for a skill
+// shows *all* of the projects for a skill
 
 class Skill extends Component {
   render() {
@@ -54,6 +54,7 @@ class Skill extends Component {
             <NASAImages />
             <CopyAndPaste />
             <MathematicalGerrymandering />
+            <Artfolio />
             <CodePenPortfolio />
             <WeeblyPortfolio />
           </Route>
@@ -62,11 +63,11 @@ class Skill extends Component {
             <Title>React</Title>
             <ProspectTheory />
             <ChemistryClicker />
-            {/* <TreeDoList /> */}
-            {/* <DiceSimulator /> */}
+            <DiceSimulator />
             <LinkShortener />
             <ProCons />
             <IdeaGenerator />
+            <Artfolio />
           </Route>
 
           <Route path="/skill/unity">
@@ -77,11 +78,13 @@ class Skill extends Component {
             <PowerOfMelody />
             <Omitl />
           </Route>
+
           <Route path="/skill/git">
             <Title>Git</Title>
             <GithubProfile />
             <StackEditContribution />
           </Route>
+
           <Route path="/skill/python">
             <Title>Python</Title>
             <RocketSimulation />
@@ -131,10 +134,10 @@ class Skill extends Component {
               In my experience programming, I have branched out to a few other aspects of engineering. I've stayed mostly within electrical engineering and mechanical engineering, and I hope that having a wide variety of skills will improve my problem solving ability. It's also a ton of fun to make stuff with my hands.
             </div>
             
-            {/* {RocketEngine()} */}
-            {/* OxidizerStand() */}
-            {/* {CAD} */}
-            {/* {Machining()} */}
+            {/* <RocketEngine /> */}
+            {/* <OxidizerStand /> */}
+            {/* <CAD /> */}
+            {/* <Machining /> */}
             
           </Route>            
           
