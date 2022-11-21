@@ -31,7 +31,9 @@ import {
   Well,
   Heart,
   ProCons,
-  RocketSimulation
+  RocketSimulation,
+  RocketEngine,
+  ProgrammingLanguageCards
 } from "../helpers/Projects";
 import { MathematicalGerrymandering } from "../helpers/Projects";
 import Title from "../helpers/Title";
@@ -46,6 +48,7 @@ class Skill extends Component {
           <Route path="/skill/web-design">
             <Title>Web Design</Title>
             <ProspectTheory />
+            <ProgrammingLanguageCards />
             <ChatApp />
             <MyBrotherSamIsDead />
             <StackEditContribution />
@@ -63,11 +66,11 @@ class Skill extends Component {
             <Title>React</Title>
             <ProspectTheory />
             <ChemistryClicker />
-            <DiceSimulator />
+            <Artfolio />
+            <ProgrammingLanguageCards />
             <LinkShortener />
             <ProCons />
             <IdeaGenerator />
-            <Artfolio />
           </Route>
 
           <Route path="/skill/unity">
@@ -134,7 +137,7 @@ class Skill extends Component {
               In my experience programming, I have branched out to a few other aspects of engineering. I've stayed mostly within electrical engineering and mechanical engineering, and I hope that having a wide variety of skills will improve my problem solving ability. It's also a ton of fun to make stuff with my hands.
             </div>
             
-            {/* <RocketEngine /> */}
+            <RocketEngine />
             {/* <OxidizerStand /> */}
             {/* <CAD /> */}
             {/* <Machining /> */}

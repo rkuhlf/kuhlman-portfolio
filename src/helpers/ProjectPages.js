@@ -513,7 +513,103 @@ export function Heart() {
   );
 }
 
-// this is the code for displaying a project in a list (wait maybe it is for a project page)
+// Engineering
+// TODO: add one or two CAD pictures
+export function RocketEngine() {
+  return (
+    <Project
+      img="https://res.cloudinary.com/dymfw7qfi/image/upload/v1668995752/RocketLaunch.png"
+      title="Design of a Hybrid Rocket Engine"
+    >
+      Working on {" "}<a
+        className="white-text"
+        href="https://sites.google.com/student.brazosportisd.net/goddard2022."
+        target="_blank"
+      >
+        the Brazoswood Goddard 2022 rocketry team
+      </a> 
+      {" "} (for which I also wrote {" "}<a
+        className="white-text"
+        href="https://sites.google.com/student.brazosportisd.net/goddard2022."
+        target="_blank"
+      >
+        a simulation script
+      </a> ), I designed a successful hybrid rocket engine. It output an estimated 1200 lbs of force for 15 seconds, boosting the rocket to 43,300 ft AGL and a world record for high school hybrid rocketeers. It was the culmination of a year of hard work and research, bringing newfound CAD, machining, chemistry, and structural analysis knowledge together to make a world-class aircraft.
+
+      <br />
+      <br />
+
+      The engine starts with pressure swirl vortex (PSV) injectors, designed by Cristian Finley, which spray the oxidizer down the fuel grain. The special nozzle was an innovative addition to the rocket, improving the atomization of the oxidizer (which improves the combustion efficiency) and adding a centripetal component to the flow through the engine (which increased the regression rate).
+      
+      <br />
+      <br />
+
+
+      <img src="https://res.cloudinary.com/dymfw7qfi/image/upload/v1668996663/Ablative.jpg" />
+
+      The pre-combustion chamber, three inches long to further allow the oxidizer to atomize, was encased by a homemade ablative designed by Kyle Evangelista and Josh Watson. Formed from a mixture of uncured epoxy and magnesium sulfate, it easily prevented the ~4000 F combustion from burning through the walls of the combustion chamber. We formed it with custom 3D printed molds and attached it butting up against the injector face. It was surrounded by an aluminum coupler to make it easier to attach to the injector bulkhead.
+
+      <br />
+      <br />
+
+      We made the post-combustion chamber the exact same way that we made the pre-combustion chamber, but with a different mold. This mold was seven inches long (to give any unburned fuel particles time to combust) and had a ledge to fit in with our nozzle retention ring.
+
+      <br />
+      <br />
+
+      The phenolic cloth formed the main body of the combustion chamber, extending about three feet and wrapping around the fuel grain. Phenolic is a thermoset plastic, so it chars away when exposed to heat (just like our ablative). That prevented any gaps in our combustion chamber from being exposed to the carbon fiber outermost shell of the rocket.
+
+      <br />
+      <br />
+
+      The nozzle retention ring coupler is the bottom-most component of our rocket's shell. Made of steel, it prevented the heat of the nozzle from melting anything away, while making it easier to bolt through. It coupled to the retention ring, a thick piece of aluminum that had radial bolt holes to go through the retention ring coupler. This piece looked a little melty afterwards, but it survived the trip and kept the nozzle and the rest of the combustion chamber inside of the rocket.
+
+      <br />
+      <br />
+
+      <img src="https://res.cloudinary.com/dymfw7qfi/image/upload/v1668996371/AftOverwrap.jpg" />
+
+      We glued everything together with a carbon fiber overwrap, which extended from the very bottom of the retention ring coupler to the very top of the aluminum coupler next to the injectors. Jacob Markham led the way in gently wrapping four layers of carbon fiber around everything, painting it continuously with epoxy to ensure that it set tightly against the airframe without any bubbles. 
+
+      <br />
+      <br />
+
+      <img src="https://res.cloudinary.com/dymfw7qfi/image/upload/v1668995761/WebRocketReveal_2.jpg" />
+
+      Obviously, the final product was incredibly cool. However, the skills I developed and the things I learned will last me for a lifetime. I spent one year of my life trying to become an expert on the chemistry of combustion and building structures that survive combustion. Through experience I learned that it is necessary to read datasheets and distrust precedents (otherwise your roofing rubber will not cure in time). I learned how to connect and seal a combustion chamber with O-rings, gasket markers, and jigs to align radial bolts. The trickiest thing that I started to understand is definitely tolerances. With so many parts interlocking, it is important to consider where the gaps in a design are at every step in the process, and look at the component as a whole to determine where they add up. Otherwise you are going to have to re-drill a lot of holes. I had a blast building a rocket, and I learned a lot too.
+
+      <img src="https://res.cloudinary.com/dymfw7qfi/image/upload/v1668996113/AtWhiteSands.jpg" />
+    </Project>
+  );
+}
+
+
+export function NozzleDesign() {
+  return (
+    <Project
+      img="https://res.cloudinary.com/dymfw7qfi/image/upload/v1668996446/Nozzle.jpg"
+      title="Design of a Rocket Nozzle"
+    >
+      
+    </Project>
+  );
+}
+
+
+export function Machining() {
+  return (
+    <Project
+      img=""
+      title="Machining"
+    >
+      {/* https://res.cloudinary.com/dymfw7qfi/image/upload/v1668516047/MachinedUpperHead.jpg */}
+      {/* https://res.cloudinary.com/dymfw7qfi/image/upload/v1668996446/Nozzle.jpg */}
+    </Project>
+  );
+}
+
+
+// this is the code for displaying a project by itself on a page
 
 function Project(props) {
   return (

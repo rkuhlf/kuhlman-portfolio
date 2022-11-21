@@ -61,6 +61,7 @@ class Home extends Component {
               {this.individualSkill("Unity", 40, "skill/unity")}
               {this.individualSkill("Data", 95, "skill/math-and-data")}
               {this.individualSkill("Git", 75, "skill/git")}
+              {this.individualSkill("Engr", 60, "skill/engineering")}
               {this.individualSkill("Art", 40, "skill/art")}
               {/* Consider adding
               Audacity

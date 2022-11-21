@@ -31,11 +31,14 @@ import {
   Well,
   Heart,
   ProCons,
-  RocketSimulation
+  RocketSimulation,
+  ProgrammingLanguageCards,
+  RocketEngine
 } from "../helpers/ProjectPages";
 import { MathematicalGerrymandering } from "../helpers/Projects";
 
-// shows all of the text for just one project
+// File maps the projects url to the page for that project.
+// Each page shows all of the text for just one project.
 
 class Project extends Component {
   render() {
@@ -52,7 +55,7 @@ class Project extends Component {
         <Route path="/project/prospect-theory" component={ProspectTheory} />
         <Route path="/project/chemistry-clicker" component={ChemistryClicker} />
         <Route path="/project/chattax" component={ChatApp} />
-        <Route path="/project/treedo-list" component={TreeDoList} />
+        {/* <Route path="/project/treedo-list" component={TreeDoList} /> */}
         <Route path="/project/mathematical-gerrymandering" component={MathematicalGerrymandering} />
         <Route path="/project/earthquake-data" component={EarthQuakeData} />
         <Route path="/project/soccer-xg" component={SoccerXG} />
@@ -74,6 +77,8 @@ class Project extends Component {
         <Route path="/project/well" component={Well} />
         <Route path="/project/heart" component={Heart} />
         <Route path="/project/procons" component={ProCons} />
+        <Route path="/project/programming-languages" component={ProgrammingLanguageCards} />
+        <Route path="/project/rocket-engine" component={RocketEngine} />
       </div>
     );
   }

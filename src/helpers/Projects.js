@@ -355,7 +355,7 @@ export function PowerOfMelody() {
 export function ProgrammingLanguageCards() {
   return (
     <Project
-      url="/project/programming-language-cards"
+      url="/project/programming-languages"
       title="Programming Language Cards"
     >
       Using Pug (Jade), I made a little website to help me verbalize the
@@ -436,6 +436,19 @@ export function Heart() {
     >
       
       A heart that I drew using a mathematical equation.
+    </Project>
+  );
+}
+
+// Engineering
+export function RocketEngine() {
+  return (
+    <Project
+      url="/project/rocket-engine"
+      img="https://res.cloudinary.com/dymfw7qfi/image/upload/v1668995752/RocketLaunch.png"
+      title="Rocket Engine Design"
+    >
+      The design and construction of a world-record hybrid rocket engine.
     </Project>
   );
 }
