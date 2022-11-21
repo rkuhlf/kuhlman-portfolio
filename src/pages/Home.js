@@ -108,7 +108,7 @@ class Home extends Component {
               </div>
               <div className="home-description typewriter scrollable">
                 <i>A Texas programmer specializing in frontend development and
-                React. Skilled in math, but low art skills and limited
+                React. Skilled in math and general engineering problems, but limited
                 experience.</i>
 
                 <br />

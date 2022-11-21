@@ -340,6 +340,20 @@ export function YouTubeHistory() {
   );
 }
 
+export function NBASalaries() {
+  return (
+    <Project
+      url="https://github.com/rkuhlf/YouTubeHistory"
+      img="#"
+      title="Predicting NBA Salaries"
+    >
+      I received third place in the Data Education and Exploration Program at Rice University for my modeling and analysis of NBA career salaries. Given the data set, I spent about three months learning about various topics in data science and machine learning, gradually applying what I learned to develop a model of the career revenue of NBA players. Across the set of data, I used pandas, numpy, and sklearn to compare the performance of a K nearest neighbors model to a random forest model.
+
+      In the end, my models were predicting within 7 or 8 million dollars for total career earnings, which is pretty good considering that the standard deviation of career earnings is 20 million.
+    </Project>
+  );
+} 
+
 // Unity
 export function Hybreeder() {
   return (
