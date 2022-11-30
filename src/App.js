@@ -45,6 +45,7 @@ export default function App() {
         <div>
           <BackButton />
           <HomeButton />
+          {/* TODO: add a mail button that takes you to the contact page. */}
         </div>
       </div>
     </Router>
