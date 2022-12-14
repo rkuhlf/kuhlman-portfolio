@@ -25,7 +25,8 @@ import {
   Heart,
   ProCons,
   RocketSimulation,
-  Modeling
+  Modeling,
+  RocketEngine
 } from "../helpers/Projects";
 
 // shows all of the projects in a scrollable list

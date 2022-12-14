@@ -139,9 +139,40 @@ a {
   flex: 1;
 }
 
+/* Used for home page layout */
 .two-columns {
   grid-column-start: 2;
   grid-column-end: 4;
+}
+
+
+
+
+@media (min-width: 700px) {
+  /* Used for bloggy descriptions */
+  .two-column {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.project-image {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.project-image .image-title {
+  margin-bottom: 0;
+  font-style: italic;
+}
+
+.project-image img {
+  margin-top: 0em !important;
+  margin-bottom: 0em !important;
+}
+
+.project-image .image-caption {
+  font-size: 0.9rem;
 }
 
 #root {
@@ -396,3 +427,7 @@ a {
 .height-buffer {
   height: 30px;
 }
+
+
+
+
