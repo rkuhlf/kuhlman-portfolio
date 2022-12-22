@@ -545,8 +545,7 @@ export function RocketEngine() {
       </a> 
       {" "} (for which I also wrote {" "}<a
         className="white-text"
-        href="https://sites.google.com/student.brazosportisd.net/goddard2022."
-        target="_blank"
+        href="/project/rocket-simulation"
       >
         a simulation script
       </a> ), I designed a successful hybrid rocket engine. It output an estimated 1200 lbs of force for 15 seconds, boosting the rocket to 43,300 ft AGL and a world record for high school hybrid rocketeers. It was the culmination of a year of hard work and research, bringing newfound CAD, machining, chemistry, and structural analysis knowledge together to make a world-class aircraft.
@@ -577,8 +576,8 @@ export function RocketEngine() {
       <br />
 
       <div className="two-column">
-        <ProjectImage title="Phenolic Covering" src="https://res.cloudinary.com/dymfw7qfi/image/upload/v1671053659/Phenolic.png" caption="Phenolic (recolored in red), extends about three feet over the back end of the rocket. Usually, it is covered by the carbon fiber overwrap, which was hidden for this screenshot." />
-        <ProjectImage title="Engine Cross Section" src="https://res.cloudinary.com/dymfw7qfi/image/upload/v1671053660/EngineCrossSection.png" caption="The phenolic covers up the rest of the engine - in particular, the swirling fuel grain." />
+        <ProjectImage title="Phenolic Covering" src="https://res.cloudinary.com/dymfw7qfi/image/upload/v1671733429/Phenolic.png" caption="Phenolic (recolored in red), extends about three feet over the back end of the rocket. Usually, it is covered by the carbon fiber overwrap, which was hidden for this screenshot." />
+        <ProjectImage title="Engine Cross Section" src="https://res.cloudinary.com/dymfw7qfi/image/upload/v1671733304/EngineCrossSection.png" caption="The phenolic covers up the rest of the engine - in particular, the swirling fuel grain." />
       </div>
 
       The phenolic cloth formed the main body of the combustion chamber, extending about three feet and wrapping around the fuel grain. Phenolic is a thermoset plastic, so it chars away when exposed to heat (just like our ablative). That prevented any gaps in our combustion chamber from being exposed to the carbon fiber outermost shell of the rocket.
@@ -602,10 +601,21 @@ export function RocketEngine() {
 
       Obviously, the final product was incredibly cool. However, the skills I developed and the things I learned will last me for a lifetime. I spent one year of my life trying to become an expert on the chemistry of combustion and building structures that survive combustion. Through experience I learned that it is necessary to read datasheets and distrust precedents (otherwise your roofing rubber will not cure in time). I learned how to connect and seal a combustion chamber with O-rings, gasket markers, and jigs to align radial bolts. The trickiest thing that I started to understand is definitely tolerances. With so many parts interlocking, it is important to consider where the gaps in a design are at every step in the process, and look at the component as a whole to determine where they add up. Otherwise you are going to have to re-drill a lot of holes. I had a blast building a rocket, and I learned a lot too.
 
-      {/* TODO: add links to army article and team site. */}
       <ProjectImage title="Launch Day Photo" src="https://res.cloudinary.com/dymfw7qfi/image/upload/v1668996113/AtWhiteSands.jpg" caption={
         <div>
-          Pictured, from left to right: Evan Andress, Riley Kuhlman, JD Pyle, Ella Mulholland, Ian Humphrey, Rory Duncanson, and Austin Morrow. There are, of course, other members of the team, but they were cropped out by the Army - read about them here.
+          Pictured, from left to right: Evan Andress, Riley Kuhlman, JD Pyle, Ella Mulholland, Ian Humphrey, Rory Duncanson, and Austin Morrow. There are, of course, other members of the team, but <a
+        className="white-text"
+        href="https://www.army.mil/article/260044/systemsgo_holds_high_school_rocket_launches_on_wsmr"
+        target="_blank"
+      >
+        they were cropped out by the Army
+      </a> - read about them <a
+        className="white-text"
+        href="https://sites.google.com/student.brazosportisd.net/goddard2022"
+        target="_blank"
+      >
+        here
+      </a>.
         </div>}
       />
     </Project>
