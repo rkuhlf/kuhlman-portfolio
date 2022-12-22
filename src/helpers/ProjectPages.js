@@ -1,6 +1,7 @@
 import React from "react";
-import Title from "./Title";
+import {Title} from "./Titles";
 import ProjectImage from "./ProjectImage";
+import Separator from "./PageSeparator";
 
 // TODO: try and find some of those pixel art animations that I spent so long working on when I was making that boss-battler rogue-like
 
@@ -555,7 +556,7 @@ export function RocketEngine() {
 
       <ProjectImage title="Rocket CAD" src="https://res.cloudinary.com/dymfw7qfi/image/upload/v1671052827/RocketCAD_2.png" caption="Computer-aided design of our rocket."/>
 
-      <hr />
+      <Separator />
 
       The engine starts with pressure swirl vortex (PSV) injectors, designed by Cristian Finley, which spray the oxidizer down the fuel grain. The special nozzle was an innovative addition to the rocket, improving the atomization of the oxidizer (which improves the combustion efficiency) and adding a centripetal component to the flow through the engine (which increased the regression rate).
       

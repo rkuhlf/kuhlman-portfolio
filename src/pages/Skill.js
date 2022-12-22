@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Route } from "react-router-dom";
+import Separator from "../helpers/PageSeparator";
 import {
   CodePenPortfolio,
   WeeblyPortfolio,
@@ -36,7 +37,7 @@ import {
   ProgrammingLanguageCards
 } from "../helpers/Projects";
 import { MathematicalGerrymandering } from "../helpers/Projects";
-import Title from "../helpers/Title";
+import {Title, SubTitle} from "../helpers/Titles";
 
 // shows *all* of the projects for a skill
 
@@ -47,19 +48,35 @@ class Skill extends Component {
         <div class="about-text no-top-space">
           <Route path="/skill/web-design">
             <Title>Web Design</Title>
+
+            <SubTitle href="/skill/react">React Websites</SubTitle>
+            <div>
+              I have found the most success using React (in fact, I used it to build this website). I like the component based development style, but it is not an overwhelming amount of additional stuff. I have used it to make some really interactive things, but I also like it for simple informational sites.
+            </div>
             <ProspectTheory />
-            <ProgrammingLanguageCards />
-            <ChatApp />
-            <MyBrotherSamIsDead />
-            <StackEditContribution />
-            <Artfolio />
             <DiceSimulator />
-            <NASAImages />
-            <CopyAndPaste />
-            <MathematicalGerrymandering />
+            
+            <Separator />
+            <SubTitle>Portfolios</SubTitle>
+            <div>
+              Artfolio is also written in React, but I put it here along with a few other attempts I have made to collect my work. 
+            </div>
             <Artfolio />
             <CodePenPortfolio />
             <WeeblyPortfolio />
+
+            <Separator />
+            <SubTitle>Chrome Extensions</SubTitle>
+            <NASAImages />
+            <CopyAndPaste />
+
+            <Separator />
+            <SubTitle>Miscellaneous</SubTitle>
+            <ProgrammingLanguageCards />
+            <ChatApp />
+            <MathematicalGerrymandering />
+            <MyBrotherSamIsDead />
+            <StackEditContribution />
           </Route>
 
           <Route path="/skill/react">
@@ -107,7 +124,7 @@ class Skill extends Component {
 
           <Route path="/skill/math-and-data">
             {/* Include AI, basketball salaries predictions, comp baseball predictions, circle center finder, and physics stuff. Add height predictor and any hard algorithms that I write. */}
-            <Title>Math ;amp Data Science</Title>
+            <Title>Math &#38; Data Science</Title>
 
             <br />
             <br />

@@ -55,13 +55,12 @@ class Home extends Component {
             <div className="center-vertical-child">
               <h3 className="title-font">Skills</h3>
               {/* Combine into web design */}
-              {this.individualSkill("Web Dev", 80, "skill/web-design")}
-              {this.individualSkill("React", 70, "skill/react")}
-              {this.individualSkill("Python", 89, "skill/python")}
-              {this.individualSkill("Unity", 40, "skill/unity")}
-              {this.individualSkill("Data", 95, "skill/math-and-data")}
-              {this.individualSkill("Git", 75, "skill/git")}
+              {this.individualSkill("Data", 90, "skill/math-and-data")}
+              {this.individualSkill("Python", 80, "skill/python")}
+              {this.individualSkill("Web Dev", 70, "skill/web-design")}
+              {this.individualSkill("Git", 70, "skill/git")}
               {this.individualSkill("Engr.", 60, "skill/engineering")}
+              {this.individualSkill("Game Dev", 40, "skill/unity")}
               {this.individualSkill("Art", 40, "skill/art")}
               {/* Consider adding
               Audacity

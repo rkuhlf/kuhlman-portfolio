@@ -40,6 +40,10 @@ a {
   color: white;
 }
 
+.block {
+  display: block;
+}
+
 .App {
   text-align: center;
   width: 100%;
@@ -209,8 +213,15 @@ a {
   margin-bottom: 5px;
 }
 
+.separator {
+  margin: 3em;
+  border-width: 2px;
+  border-style: solid;
+}
+
 .about-text h2 {
   margin-top: 0.25em;
+  margin-bottom: 0;
   font-size: 2em;
 }
 

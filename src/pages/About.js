@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import Title from "../helpers/Title";
+import { Title} from "../helpers/Titles";
 
 class About extends Component {
   render() {

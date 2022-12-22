@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Title from "../helpers/Title";
+import {SubTitle, Title} from "../helpers/Titles";
 import {
   CodePenPortfolio,
   WeeblyPortfolio,
@@ -28,6 +28,7 @@ import {
   Modeling,
   RocketEngine
 } from "../helpers/Projects";
+import Separator from "../helpers/PageSeparator";
 
 // shows all of the projects in a scrollable list
 
@@ -40,8 +41,9 @@ class Projects extends Component {
 
         <div className="about-text">
           This is a list highlighting my best projects, loosely organized by what skill the most relevant skill.
-
-          <h2 className="title-font white-text no-underline">Python Scripts</h2>
+          <br />
+          <br />
+          <SubTitle>Python Scripts</SubTitle>
           <div>
             I always love programming in Python because of the ease of
             converting my thoughts into code, and I've made several of my
@@ -51,7 +53,9 @@ class Projects extends Component {
           < PictureOfPictures />
           {/* CEA */}
 
-          <h2 className="title-font white-text no-underline">React Sites</h2>
+          <Separator />
+
+          <SubTitle>React Sites</SubTitle>
           <div>
             My current favorite way to build apps is with reactjs. I love the
             simplicity and scalability of it.
@@ -61,10 +65,9 @@ class Projects extends Component {
           < ProCons />
           < IdeaGenerator />
 
+          <Separator />
 
-          <h2 className="title-font white-text no-underline">
-            Websites with Backend
-          </h2>
+          <SubTitle>Websites with Backend</SubTitle>
           <div>
             I've built a couple of applications that make use of databases for a
             couple of projects in the past.
@@ -73,7 +76,9 @@ class Projects extends Component {
           {/* < TreeDoList /> */}
 
 
-          <h2 className="title-font white-text no-underline">Unity Games</h2>
+          <Separator />
+
+          <SubTitle>Unity Games</SubTitle>
           <div>
             I've made lots of Unity games that you can see on my Itch page, and
             I like to take the opportunity to not only work on my programming
@@ -87,8 +92,9 @@ class Projects extends Component {
           < PowerOfMelody />
           < Runing />
 
+          <Separator />
 
-          <h2 className="title-font white-text no-underline">Data Analysis</h2>
+          <SubTitle>Data Analysis</SubTitle>
           <div>
             I love math, and I've dabbled in analyzing data a couple of times.
           </div>
@@ -97,7 +103,9 @@ class Projects extends Component {
           < DiceSimulator />
 
 
-          <h2 className="title-font white-text no-underline">Miscellaneous Software</h2>
+          <Separator />
+
+          <SubTitle>Miscellaneous Software</SubTitle>
           <div>
             I've done some other projects that I'm proud of, but they don't really fit into any other category.
           </div>
@@ -105,9 +113,9 @@ class Projects extends Component {
           < CopyAndPaste />
           < Modeling />
 
-          <h2 className="title-font white-text no-underline">
-            Other Portfolios
-          </h2>
+          <Separator />
+
+          <SubTitle>Other Portfolios</SubTitle>
           <div>
             I've made several portfolios as I progressed as a programmer, and I decided to keep them here for posterity's sake. Although the spirit and effort was constant, sometimes the content was lacking.
           </div>
@@ -116,7 +124,9 @@ class Projects extends Component {
           < WeeblyPortfolio />
 
 
-          <h2 className="title-font white-text no-underline">Engineering</h2>
+
+          <Separator />
+          <SubTitle>Engineering</SubTitle>
           <div>
             In my experience programming, I have branched out to a few other aspects of engineering. I've stayed mostly within electrical engineering and mechanical engineering, and I hope that having a wide variety of skills will improve my problem solving ability. It's also a ton of fun to make stuff with my hands.
           </div>

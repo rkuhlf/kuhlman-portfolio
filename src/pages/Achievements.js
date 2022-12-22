@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Title from "../helpers/Title";
+import { Title } from "../helpers/Titles";
 import Achievement from "../helpers/Achievement";
 import { Link } from "react-router-dom";
 
