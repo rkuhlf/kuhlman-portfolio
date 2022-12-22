@@ -153,6 +153,7 @@ a {
   .two-column {
     display: flex;
     flex-direction: row;
+    gap: 1em;
   }
 }
 

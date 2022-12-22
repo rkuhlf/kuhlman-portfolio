@@ -597,7 +597,7 @@ export function RocketEngine() {
       <br />
       <br />
 
-      <ProjectImage src="https://res.cloudinary.com/dymfw7qfi/image/upload/v1668995761/WebRocketReveal_2.jpg" />
+      <ProjectImage src="https://res.cloudinary.com/dymfw7qfi/image/upload/v1668995761/WebRocketReveal_2.jpg" title="Rocket Reveal" caption="The complete Goddard 2022 rocketry team. Pictured on the far left is Mr. McLeod, our incredible teacher." />
 
       Obviously, the final product was incredibly cool. However, the skills I developed and the things I learned will last me for a lifetime. I spent one year of my life trying to become an expert on the chemistry of combustion and building structures that survive combustion. Through experience I learned that it is necessary to read datasheets and distrust precedents (otherwise your roofing rubber will not cure in time). I learned how to connect and seal a combustion chamber with O-rings, gasket markers, and jigs to align radial bolts. The trickiest thing that I started to understand is definitely tolerances. With so many parts interlocking, it is important to consider where the gaps in a design are at every step in the process, and look at the component as a whole to determine where they add up. Otherwise you are going to have to re-drill a lot of holes. I had a blast building a rocket, and I learned a lot too.
 
