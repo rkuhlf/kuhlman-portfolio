@@ -90,13 +90,20 @@ class Skill extends Component {
             <IdeaGenerator />
           </Route>
 
-          <Route path="/skill/unity">
-            <Title>Unity</Title>
+          <Route path="/skill/games">
+            <Title>Game Development</Title>
+
+            <SubTitle>Unity</SubTitle>
             <Hybreeder />
             <Runing />
             <TheGreatestSnowball />
             <PowerOfMelody />
             <Omitl />
+
+            <Separator />
+            <SubTitle>Miscellaneous</SubTitle>
+            <MyBrotherSamIsDead />
+            <ChemistryClicker />
           </Route>
 
           <Route path="/skill/git">
@@ -110,6 +117,7 @@ class Skill extends Component {
             <RocketSimulation />
             <PictureOfPictures />
             <WordGame />
+            {/* CEA */}
           </Route>
 
           <Route path="/skill/art">
