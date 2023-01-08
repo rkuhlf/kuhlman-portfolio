@@ -132,7 +132,7 @@ class Projects extends Component {
           </div>
 
           <RocketEngine />
-          {/* <OxidizerStand /> */}
+          <OxidizerStand />
 
         </div>
       </div>

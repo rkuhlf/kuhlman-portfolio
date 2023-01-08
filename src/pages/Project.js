@@ -33,7 +33,8 @@ import {
   ProCons,
   RocketSimulation,
   ProgrammingLanguageCards,
-  RocketEngine
+  RocketEngine,
+  OxidizerStand
 } from "../helpers/ProjectPages";
 import { MathematicalGerrymandering } from "../helpers/Projects";
 
@@ -79,6 +80,7 @@ class Project extends Component {
         <Route path="/project/procons" component={ProCons} />
         <Route path="/project/programming-languages" component={ProgrammingLanguageCards} />
         <Route path="/project/rocket-engine" component={RocketEngine} />
+        <Route path="/project/oxidizer-stand" component={OxidizerStand} />
       </div>
     );
   }

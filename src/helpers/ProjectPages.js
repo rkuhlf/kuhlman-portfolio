@@ -529,6 +529,8 @@ export function Heart() {
   );
 }
 
+// Add that LaTeX paper that I hopefully write.
+
 // Engineering
 // TODO: adjust all images on project pages to have a title and a caption.
 export function RocketEngine() {
@@ -631,6 +633,17 @@ export function NozzleDesign() {
       title="Design of a Rocket Nozzle"
     >
       
+    </Project>
+  );
+}
+
+export function OxidizerStand() {
+  return (
+    <Project
+      img="https://res.cloudinary.com/dymfw7qfi/image/upload/v1673195855/ElectronicsBox_Cropped.jpg"
+      title="Mass-Measuring Ox Stand"
+    >
+      Rockets are powered using incredibly powerful engines. Those engines have to be tested before the rockets can fly. Those tests require an oxidizer tank to fuel the engine. That oxidizer needs a stand to stop it from falling in the barren testing location, and it would be nice if it recorded and output the mass of the tank over time. That is where the Boom Boxers came in.
     </Project>
   );
 }

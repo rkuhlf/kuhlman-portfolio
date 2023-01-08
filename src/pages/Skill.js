@@ -34,7 +34,8 @@ import {
   ProCons,
   RocketSimulation,
   RocketEngine,
-  ProgrammingLanguageCards
+  ProgrammingLanguageCards,
+  OxidizerStand
 } from "../helpers/Projects";
 import { MathematicalGerrymandering } from "../helpers/Projects";
 import {Title, SubTitle} from "../helpers/Titles";
@@ -163,7 +164,7 @@ class Skill extends Component {
             </div>
             
             <RocketEngine />
-            {/* <OxidizerStand /> */}
+            <OxidizerStand />
             {/* <CAD /> */}
             {/* <Machining /> */}
             

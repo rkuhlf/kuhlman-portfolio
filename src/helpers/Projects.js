@@ -453,10 +453,20 @@ export function RocketEngine() {
   );
 }
 
-// this is the code for displaying a project in a list
+export function OxidizerStand() {
+  return (
+    <Project
+      url="/project/oxidizer-stand"
+      img="https://res.cloudinary.com/dymfw7qfi/image/upload/v1673195252/LoadedTank.jpg"
+      title="Oxidizer Stand"
+    >
+      Embedded and mechanical engineering project for rocket ground systems. 
+    </Project>
+  );
+}
 
+// Display a project in a list of projects.
 function Project(props) {
-  console.log(props);
   return (
     <div>
       <div>
