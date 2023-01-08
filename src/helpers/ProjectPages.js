@@ -2,6 +2,7 @@ import React from "react";
 import {Title} from "./Titles";
 import ProjectImage from "./ProjectImage";
 import Separator from "./PageSeparator";
+import { StyledLink } from "./Links";
 
 // TODO: try and find some of those pixel art animations that I spent so long working on when I was making that boss-battler rogue-like
 
@@ -292,13 +293,11 @@ export function RocketSimulation() {
       <br />
       <br />
 
-      We flew successfully in June of 2022 at the missile range in White Sands, verifying the accuracy of the simulation to within 5%. The team remains the world record holder for apogee of a high school rocket, flying to 45,000' and nearly twice the speed of sound. You can read more about us{" "}<a
-        className="white-text"
+      We flew successfully in June of 2022 at the missile range in White Sands, verifying the accuracy of the simulation to within 5%. The team remains the world record holder for apogee of a high school rocket, flying to 45,000' and nearly twice the speed of sound. You can read more about us{" "}<StyledLink
         href="https://sites.google.com/student.brazosportisd.net/goddard2022."
-        target="_blank"
       >
         on our website
-      </a> 
+      </StyledLink> 
       {" "}(I wrote most of this too, but we used Google Sites for easy collaboration).
     </Project>
   );
@@ -324,7 +323,7 @@ export function SoccerXG() {
       img="https://res.cloudinary.com/dymfw7qfi/image/upload/v1584372108/Annotation_2020-03-16_102126.png"
       title="Soccer Expected Goals"
     >
-      A neural network based prediction of who will win soccer games. Using data from{" "}<a href="https://www.kaggle.com/hugomathien/soccer">Kaggle</a>{" "}, I combined my interests in Python and soccer to try to figure out what makes teams more likely to win. I used Tensorflow and a pretty small neural network (it turns out to be pretty hard to predict sports), but I was happy with the project.
+      A neural network based prediction of who will win soccer games. Using data from{" "}<StyledLink href="https://www.kaggle.com/hugomathien/soccer">Kaggle</StyledLink>{" "}, I combined my interests in Python and soccer to try to figure out what makes teams more likely to win. I used Tensorflow and a pretty small neural network (it turns out to be pretty hard to predict sports), but I was happy with the project.
     </Project>
   );
 }
@@ -644,6 +643,36 @@ export function OxidizerStand() {
       title="Mass-Measuring Ox Stand"
     >
       Rockets are powered using incredibly powerful engines. Those engines have to be tested before the rockets can fly. Those tests require an oxidizer tank to fuel the engine. That oxidizer needs a stand to stop it from falling in the barren testing location, and it would be nice if it recorded and output the mass of the tank over time. That is where the Boom Boxers came in.
+
+      <br/>
+      <br/>
+
+      As a team of four, we were tasked with designing an easily transportable method for restraining the ox tank and recording its mass, documenting every engineering decision we made in the process. We wrote technical memos every week, and <StyledLink href="https://docs.google.com/document/d/1r-igDZjZiaik_lD3A7A64nPTHYDuqC252aXiT0b-rTQ/edit"> the culminating document</StyledLink> summarized the entire project. I also wrote <StyledLink href="https://rice.digication.com/riley-kuhlman/home-1">a small website</StyledLink> summarizing the project and my experience with it. In the end, we came out with a mostly usable product.
+
+      <br />
+      <br />
+
+      As a part of the engineering design process, we spent quite a bit of time working with the problem before we actually got to building anything. We had several interviews with our client - Rice Eclipse, researched standard solutions for securing ox tanks, and looked into various techniques for creating pressure plates. With our understanding established, we brainstormed ideas for all different kinds of products, but we settled on modifying a purchased hand truck to have a pressure plate rest on the bed.
+
+      <br />
+      <br />
+
+      <ProjectImage src="https://res.cloudinary.com/dymfw7qfi/image/upload/v1673197027/Pins.jpg" />
+
+      We developed a pinning mechanism to allow the leg to fold while also preventing rotation, I cut and glued some chocks together to hold the wheels in place, and we attached some handles for straps. With those modifications, the hand truck could be wheeled to the correct location on site, then fixed in position to prevent movement and rotation. That prevented the tank from tipping, which could have caused an explosion.
+
+      <div className="two-column">
+        <ProjectImage src="https://res.cloudinary.com/dymfw7qfi/image/upload/v1673197552/WaterDrainFullPicture.jpg" caption="Testing the accuracy of the pressure plate as the water drains from the bucket."/>
+        <ProjectImage src="https://res.cloudinary.com/dymfw7qfi/image/upload/v1673195855/ElectronicsBox_Cropped.jpg" caption="Close-up of the box that houses the electronics for storing the mass."/>
+      </div>
+
+      I led the effort to add mass-measuring functionality to the device. Using a few load cells, an Arduino Uno, an SD card, and an extremely memory-efficient C program, I was successful. The load cells measure the strain due to weight, that voltage is sent through some amplifiers, and into my code. The code adjusts the values using some manually-generated calibration factors, then writes it to a .csv file on the SD card. Add a few switches, solder some wires, and the project was completed.
+
+      <br />
+      <br />
+
+      I was quite pleased with this project. We followed the design process to make a useful, well-documented device, and I look forward to similar projects in the future.
+
     </Project>
   );
 }

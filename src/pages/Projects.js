@@ -26,7 +26,8 @@ import {
   ProCons,
   RocketSimulation,
   Modeling,
-  RocketEngine
+  RocketEngine,
+  OxidizerStand
 } from "../helpers/Projects";
 import Separator from "../helpers/PageSeparator";
 
