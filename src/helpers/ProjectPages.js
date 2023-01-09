@@ -353,6 +353,7 @@ export function NBASalaries() {
       I received third place in the Data Education and Exploration Program at Rice University for my modeling and analysis of NBA career salaries. After being given the data set, I spent about three months learning about various topics in data science and machine learning, gradually applying what I learned to develop a model of the career revenue of NBA players. Across the set of data, I used pandas, numpy, and sklearn to compare the performance of a K nearest neighbors model to a random forest model.
 
       <br />
+      <br />
 
       In the end, my models were predicting within 7 or 8 million dollars for total career earnings, which is pretty good considering that the standard deviation of career earnings is 20 million. More importantly, I made <StyledLink href="https://docs.google.com/presentation/d/1Ws1tcQGwKeTtEQPWnvQrBOL-9_LH8z3jWofuFuXaRBI/edit?usp=sharing">a fun presentation</StyledLink> to show what I had learned. I focused on telling a story with the data, and frequently relating it back to its real life significance via specific players.
     </Project>
