@@ -34,7 +34,8 @@ import {
   RocketSimulation,
   ProgrammingLanguageCards,
   RocketEngine,
-  OxidizerStand
+  OxidizerStand,
+  NBASalaries
 } from "../helpers/ProjectPages";
 import { MathematicalGerrymandering } from "../helpers/Projects";
 
@@ -81,6 +82,7 @@ class Project extends Component {
         <Route path="/project/programming-languages" component={ProgrammingLanguageCards} />
         <Route path="/project/rocket-engine" component={RocketEngine} />
         <Route path="/project/oxidizer-stand" component={OxidizerStand} />
+        <Route path="/project/nba-salaries" component={NBASalaries} />
       </div>
     );
   }

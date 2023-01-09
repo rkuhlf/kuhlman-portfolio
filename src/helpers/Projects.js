@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { StyledLink } from "./Links";
 
 // this is a list of all of my projects so that I can just import the ones I want. The description in the box should be a short caption.
 
@@ -63,7 +64,7 @@ export function Modeling() {
       img="https://res.cloudinary.com/dymfw7qfi/image/upload/v1667685448/Food.png"
       title="3D Modeling"
     >
-      The summer of Covid, I took up 3D modeling as a hobby. I published several asset packs to <a target="_blank" className="white-text" href="https://rkuhlf-assets.itch.io/">my itch.io page</a>, featuring animated marine and ice age animals, a snail, and a ton of food. Since then, I have collected over 8,000 views and 2,500 downloads, giving a little back to the game-making community that has given so much to me.
+      The summer of Covid, I took up 3D modeling as a hobby. I published several asset packs to <StyledLink href="https://rkuhlf-assets.itch.io/">my itch.io page</StyledLink>, featuring animated marine and ice age animals, a snail, and a ton of food. Since then, I have collected over 8,000 views and 2,500 downloads, giving a little back to the game-making community that has given so much to me.
     </Project>
   );
 }
@@ -251,6 +252,18 @@ export function RocketSimulation() {
       title="Rocket Simulation"
     >
       A suite of rocket simulation tools, developed for the Goddard rocketry team at Brazoswood. Pictures is the output of the thrust curve optimization simulation.
+    </Project>
+  );
+}
+
+export function NBASalaries() {
+  return (
+    <Project
+      url="/project/nba-salaries"
+      img="https://res.cloudinary.com/dymfw7qfi/image/upload/v1673231396/NetsNBASalaries.png"
+      title="NBA Salaries"
+    >
+      Bronze medal machine learning, using random forest and KNN to predict NBA salaries.
     </Project>
   );
 }
@@ -472,13 +485,14 @@ function Project(props) {
       <div>
         <Link className="no-underline" to={props.url}>
           <h3 className="title-font white-text no-underline">{props.title}</h3>
-        </Link>
         <img
           className="project-thumbnail"
           src={props.img}
           alt="project thumbnail"
         />
+        {/* This is the caption, effectively. */}
         {props.children}
+        </Link>
       </div>
     </div>
   );

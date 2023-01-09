@@ -27,7 +27,8 @@ import {
   RocketSimulation,
   Modeling,
   RocketEngine,
-  OxidizerStand
+  OxidizerStand,
+  NBASalaries
 } from "../helpers/Projects";
 import Separator from "../helpers/PageSeparator";
 
@@ -97,8 +98,9 @@ class Projects extends Component {
 
           <SubTitle>Data Analysis</SubTitle>
           <div>
-            I love math, and I've dabbled in analyzing data a couple of times.
+            I love math, and I've dabbled in analyzing data a couple of times. The rocket simulation that I already mentioned is a great example, but I have some more numbers-oriented stuff as well.
           </div>
+          < NBASalaries />
           < SoccerXG />
           < EarthQuakeData />
           < DiceSimulator />

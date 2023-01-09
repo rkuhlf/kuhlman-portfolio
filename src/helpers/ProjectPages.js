@@ -55,33 +55,33 @@ export function Modeling() {
       img="https://res.cloudinary.com/dymfw7qfi/image/upload/v1667685448/Food.png"
       title="3D Modeling"
     >
-      The summer of Covid, I took up 3D modeling as a hobby. With Blender as my weapon of choice, I published several asset packs to <a target="_blank" className="white-text" href="https://rkuhlf-assets.itch.io/">my itch.io page</a>, featuring animated marine and ice age animals, a snail, and a ton of food. Since then, I have collected over 8,000 views and 2,500 downloads, giving a little back to the game-making community that has given so much to me.
+      The summer of Covid, I took up 3D modeling as a hobby. With Blender as my weapon of choice, I published several asset packs to <StyledLink href="https://rkuhlf-assets.itch.io/">my itch.io page</StyledLink>, featuring animated marine and ice age animals, a snail, and a ton of food. Since then, I have collected over 8,000 views and 2,500 downloads, giving a little back to the game-making community that has given so much to me.
       <br />
 
-      <a href="https://rkuhlf-assets.itch.io/aquatic-animal-models">
+      <StyledLink href="https://rkuhlf-assets.itch.io/aquatic-animal-models">
         <img src="https://res.cloudinary.com/dymfw7qfi/image/upload/v1667686284/Shark.png" />
-      </a>
+      </StyledLink>
       My first real project was a collection of low-poly marine animals, each animated to be idle and moving. It got way more traction than I expected, which inspired me to keep going.
 
-      <a href="https://rkuhlf-assets.itch.io/ice-age">
+      <StyledLink href="https://rkuhlf-assets.itch.io/ice-age">
         <img src="https://res.cloudinary.com/dymfw7qfi/image/upload/v1667686201/Mammoth.png" />
-      </a>
+      </StyledLink>
       I followed it up with a set of animals from the Ice Age. I liked thinking about Sid the sloth and Manny the mammoth of the wonderful Ice Age movies, but I tried to make it a little more proportionally realistic.
 
-      <a href="https://rkuhlf-assets.itch.io/classical-paintings">
+      <StyledLink href="https://rkuhlf-assets.itch.io/classical-paintings">
         <img src="https://res.cloudinary.com/dymfw7qfi/image/upload/v1667686454/Adam.png" />
-      </a>
-      Eventually, I branched out in pixel art. I made a set of replica portraits, trying to capture the sense provided by each famous painting.
+      </StyledLink>
+      Eventually, I branched out to pixel art. I made a set of replica portraits, trying to capture the sense provided by each famous painting.
 
 
-      <a href="https://rkuhlf-assets.itch.io/low-poly-shields">
+      <StyledLink href="https://rkuhlf-assets.itch.io/low-poly-shields">
         <img src="https://res.cloudinary.com/dymfw7qfi/image/upload/v1667686421/Shields.png" />
-      </a>
+      </StyledLink>
       In an attempt to making something that would be a little more niche, I came up with a set of shields. Each one had its own design, and I had a ton of fun picking and choosing the aesthetics.
 
-      <a href="https://www.artstation.com/artwork/ZG0Vww">
+      <StyledLink href="https://www.artstation.com/artwork/ZG0Vww">
         <img src="https://res.cloudinary.com/dymfw7qfi/image/upload/v1667686741/riley-kuhlman-final.png" />
-      </a>
+      </StyledLink>
       My ultimate project was a massive fire-breathing dragon. I was determined to finally successfully venture out of the realm of low-poly assets and into art that just looks cool. Dragons are just about the coolest thing I know, so I went with that.
 
     </Project>
@@ -247,6 +247,7 @@ export function ChatApp() {
 }
 
 // Unfinished
+// TODO: Remove.
 export function TreeDoList() {
   return (
     <Project url="/project/treedo-list" img="#" title="Tree Do List">
@@ -256,7 +257,6 @@ export function TreeDoList() {
 }
 
 // P5js
-
 export function MathematicalGerrymandering() {
   return (
     <Project
@@ -341,16 +341,20 @@ export function YouTubeHistory() {
   );
 }
 
+// TODO: Improve my presentation of this project. It is definitely my best data science to date.
+// Cover some of the results, and add a few graphs.
 export function NBASalaries() {
   return (
     <Project
-      url="https://github.com/rkuhlf/YouTubeHistory"
-      img="#"
+      url="https://github.com/rkuhlf/NBA-salary-prediction"
+      img="https://res.cloudinary.com/dymfw7qfi/image/upload/v1673231396/NetsNBASalaries.png"
       title="Predicting NBA Salaries"
     >
-      I received third place in the Data Education and Exploration Program at Rice University for my modeling and analysis of NBA career salaries. Given the data set, I spent about three months learning about various topics in data science and machine learning, gradually applying what I learned to develop a model of the career revenue of NBA players. Across the set of data, I used pandas, numpy, and sklearn to compare the performance of a K nearest neighbors model to a random forest model.
+      I received third place in the Data Education and Exploration Program at Rice University for my modeling and analysis of NBA career salaries. After being given the data set, I spent about three months learning about various topics in data science and machine learning, gradually applying what I learned to develop a model of the career revenue of NBA players. Across the set of data, I used pandas, numpy, and sklearn to compare the performance of a K nearest neighbors model to a random forest model.
 
-      In the end, my models were predicting within 7 or 8 million dollars for total career earnings, which is pretty good considering that the standard deviation of career earnings is 20 million.
+      <br />
+
+      In the end, my models were predicting within 7 or 8 million dollars for total career earnings, which is pretty good considering that the standard deviation of career earnings is 20 million. More importantly, I made <StyledLink href="https://docs.google.com/presentation/d/1Ws1tcQGwKeTtEQPWnvQrBOL-9_LH8z3jWofuFuXaRBI/edit?usp=sharing">a fun presentation</StyledLink> to show what I had learned. I focused on telling a story with the data, and frequently relating it back to its real life significance via specific players.
     </Project>
   );
 } 
@@ -515,13 +519,7 @@ export function Heart() {
       img="https://res.cloudinary.com/dymfw7qfi/image/upload/v1586087200/MathematicalHeart.gif"
       title="Mathematical Heart"
     >
-      I love math, and I have been a massive fan of 3blue1brown for quite some time. In his YouTube videos, he uses a Python library that he developed, <a
-        className="white-text"
-        href="https://github.com/3b1b/manim"
-        target="_blank"
-      >
-        manim
-      </a>, to generate animations that explain mathematical concepts. I took it upon myself to learn the library, combing through the code base to make up for the lack of documentation, and I made a couple small videos demonstrating concepts.
+      I love math, and I have been a massive fan of 3blue1brown for quite some time. In his YouTube videos, he uses a Python library that he developed, <StyledLink href="https://github.com/3b1b/manim">manim</StyledLink>, to generate animations that explain mathematical concepts. I took it upon myself to learn the library, combing through the code base to make up for the lack of documentation, and I made a couple small videos demonstrating concepts.
       <br />
       Pictured is a heart that is drawn using a mathematical equation. I extended the library to include polar graphs, and then I developed a function that would output a heart shape.
     </Project>
@@ -538,19 +536,15 @@ export function RocketEngine() {
       img="https://res.cloudinary.com/dymfw7qfi/image/upload/v1668995752/RocketLaunch.png"
       title="Design of a Hybrid Rocket Engine"
     >
-      Working on {" "}<a
-        className="white-text"
-        href="https://sites.google.com/student.brazosportisd.net/goddard2022."
-        target="_blank"
-      >
+      Working on {" "}<StyledLink href="https://sites.google.com/student.brazosportisd.net/goddard2022.">
         the Brazoswood Goddard 2022 rocketry team
-      </a> 
-      {" "} (for which I also wrote {" "}<a
-        className="white-text"
+      </StyledLink> 
+      {" "} (for which I also wrote {" "}<StyledLink
         href="/project/rocket-simulation"
+        target="_self"
       >
         a simulation script
-      </a> ), I designed a successful hybrid rocket engine. It output an estimated 1200 lbs of force for 15 seconds, boosting the rocket to 43,300 ft AGL and a world record for high school hybrid rocketeers. It was the culmination of a year of hard work and research, bringing newfound CAD, machining, chemistry, and structural analysis knowledge together to make a world-class aircraft.
+      </StyledLink> ), I designed a successful hybrid rocket engine. It output an estimated 1200 lbs of force for 15 seconds, boosting the rocket to 43,300 ft AGL and a world record for high school hybrid rocketeers. It was the culmination of a year of hard work and research, bringing newfound CAD, machining, chemistry, and structural analysis knowledge together to make a world-class aircraft.
 
       <br />
       <br />
@@ -605,19 +599,15 @@ export function RocketEngine() {
 
       <ProjectImage title="Launch Day Photo" src="https://res.cloudinary.com/dymfw7qfi/image/upload/v1668996113/AtWhiteSands.jpg" caption={
         <div>
-          Pictured, from left to right: Evan Andress, Riley Kuhlman, JD Pyle, Ella Mulholland, Ian Humphrey, Rory Duncanson, and Austin Morrow. There are, of course, other members of the team, but <a
-        className="white-text"
+          Pictured, from left to right: Evan Andress, Riley Kuhlman, JD Pyle, Ella Mulholland, Ian Humphrey, Rory Duncanson, and Austin Morrow. There are, of course, other members of the team, but <StyledLink
         href="https://www.army.mil/article/260044/systemsgo_holds_high_school_rocket_launches_on_wsmr"
-        target="_blank"
       >
         they were cropped out by the Army
-      </a> - read about them <a
-        className="white-text"
+      </StyledLink> - read about them <StyledLink
         href="https://sites.google.com/student.brazosportisd.net/goddard2022"
-        target="_blank"
       >
         here
-      </a>.
+      </StyledLink>.
         </div>}
       />
     </Project>
